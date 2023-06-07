@@ -197,6 +197,10 @@ select {
   vertical-align: middle;
 }
 
+li {
+  list-style: none;
+}
+
 /* Generic Styles */
 
 body {
@@ -204,5 +208,48 @@ body {
 }
 
 .heading-xl {
-  font-family: ;
+  font-size: var(--fs-xlarge);
+  font-weight: 700;
+
+  line-height: 88px;
+  letter-spacing: -2.5px;
 }
+
+.heading-l {
+  font-size: var(--fs-large);
+  font-weight: 700;
+
+  line-height: 56px;
+  letter-spacing: -1.5px;
+}
+
+.heading-m {
+  font-size: var(--fs-medium);
+  font-weight: 700;
+
+  line-height: 32px;
+}
+
+.body-medium {
+  font-size: var(--fs-body);
+  font-weight: 500;
+
+  line-height: 28px;
+}
+
+.btn {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+
+  text-transform: uppercase;
+
+  border: none;
+  border-bottom: 2px solid var(--clr-primary-100);
+  padding-bottom: 5px;
+
+  color: var(--clr-netural-100);
+}
+
+/*  */
