@@ -205,6 +205,9 @@ li {
 
 body {
   font-family: var(--ff-main);
+
+  background-color: var(--clr-netural-400);
+  color: var(--clr-netural-100);
 }
 
 .heading-xl {
@@ -240,7 +243,7 @@ body {
 .btn {
   background-color: transparent;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 26px;
 
   text-transform: uppercase;
@@ -250,6 +253,100 @@ body {
   padding-bottom: 5px;
 
   color: var(--clr-netural-100);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 
-/*  */
+.btn:hover {
+  color: var(--clr-primary-100);
+}
+
+/* Header CSS */
+
+header {
+  height: 730px;
+
+  padding-block-end: 3rem;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1110px;
+  margin-inline: auto;
+
+  padding-block: 2rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  width: 193px;
+  padding-right: 1.5rem;
+}
+
+.navbar-brand {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.44px;
+}
+
+.nav-link:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(35%) saturate(4438%)
+    hue-rotate(66deg) brightness(125%) contrast(75%);
+}
+
+/* Heading CSS */
+.heading {
+  width: 1110px;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+}
+
+.header-content {
+  width: 706px;
+
+  padding-block-start: 5rem;
+}
+
+.header-content p {
+  width: 445px;
+
+  padding-block: 3rem 4rem;
+}
+
+.header-img {
+  content: url('../img/image-profile-desktop.webp');
+  width: 445px;
+  height: 720px;
+
+  position: absolute;
+  top: -20%;
+  right: 0;
+
+  z-index: -4;
+}
+
+/* Experiance CSS */
+
+.experiance {
+  width: 1110px;
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding-block-start: 3rem;
+  border-top: 1px solid var(--clr-netural-100);
+}
