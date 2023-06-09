@@ -357,6 +357,80 @@ header {
   grid-template-columns: repeat(3, 345px);
   grid-template-rows: repeat(2, 98px);
 
-  column-gap: 40px;
+  column-gap: 36px;
   row-gap: 50px;
+}
+
+.experiance-container p {
+  padding-block-start: 14px;
+}
+
+/* Experiance CSS END */
+
+.projects {
+  width: 1110px;
+  margin-inline: auto;
+
+  padding-block: 6rem 7rem;
+}
+
+.projects-header {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 80px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 30px;
+  row-gap: 69px;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5,
+.project-6 {
+  width: 540px;
+  height: 400px;
+
+  background-color: var(--clr-primary-100);
+
+  position: relative;
+  z-index: -1;
+}
+
+.project .heading-m {
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.project .body {
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 12px;
+}
+
+.btn-section {
+  position: absolute;
+
+  top: -50%;
+  background-color: #000;
+
+  z-index: 10;
+}
+
+footer {
+  height: 675px;
+  background-color: var(--clr-netural-300);
 }
