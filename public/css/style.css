@@ -347,6 +347,16 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  padding-block-start: 3rem;
   border-top: 1px solid var(--clr-netural-100);
+}
+
+.experiance-container {
+  padding-block-start: 72px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 345px);
+  grid-template-rows: repeat(2, 98px);
+
+  column-gap: 40px;
+  row-gap: 50px;
 }
