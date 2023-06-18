@@ -59,8 +59,27 @@
           </li>
         </ul>
       </div>
+    </header>
 
-      <div class="heading">
+    <main>
+      <section class="heading">
+        <picture>
+          <source
+            media="(min-width:1165px)"
+            srcset="./public/img/image-profile-desktop.webp"
+          />
+          <source
+            media="(min-width:767px)"
+            srcset="./public/img/image-profile-tablet.webp"
+          />
+
+          <img
+            class="header-img"
+            src="./public/img/image-profile-mobile.webp"
+            alt="Profile Image"
+          />
+        </picture>
+
         <div class="header-content">
           <h1 class="heading-xl">
             Nice to meet you! I'm
@@ -72,12 +91,8 @@
           </p>
           <button class="btn">Contact me</button>
         </div>
+      </section>
 
-        <img class="header-img" src="" alt="" />
-      </div>
-    </header>
-
-    <main>
       <section class="experiance">
         <div class="experiance-container">
           <div class="expreiance-1">
@@ -115,7 +130,11 @@
         <div class="projects-container">
           <div class="project">
             <div class="img-container">
-              <img class="project-1" src="" alt="" />
+              <img
+                class="project-img"
+                src="./public/img/thumbnail-project-1-large.webp"
+                alt=""
+              />
 
               <div class="img-buttons">
                 <button class="btn">View Project</button>
@@ -136,7 +155,11 @@
 
           <div class="project">
             <div class="img-container">
-              <img class="project-2" src="" alt="" />
+              <img
+                class="project-img"
+                src="./public/img/thumbnail-project-2-large.webp"
+                alt=""
+              />
 
               <div class="img-buttons">
                 <button class="btn">View Project</button>
@@ -157,29 +180,11 @@
 
           <div class="project">
             <div class="img-container">
-              <img class="project-3" src="" alt="" />
-
-              <div class="img-buttons">
-                <button class="btn">View Project</button>
-                <button class="btn">View Code</button>
-              </div>
-            </div>
-            <h3 class="heading-m">Design portfolio</h3>
-            <div class="body">
-              <div>html</div>
-              <div>css</div>
-              <div>javascript</div>
-            </div>
-
-            <div class="btn-section">
-              <button class="btn">View Project</button>
-              <button class="btn">View Code</button>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="img-container">
-              <img class="project-4" src="" alt="" />
+              <img
+                class="project-img"
+                src="./public/img/thumbnail-project-3-large.webp"
+                alt=""
+              />
 
               <div class="img-buttons">
                 <button class="btn">View Project</button>
@@ -201,7 +206,12 @@
 
           <div class="project">
             <div class="img-container">
-              <img class="project-5" src="" alt="" />
+              <img
+                class="project-img"
+                src="./public/img/thumbnail-project-4-large.webp"
+                src=""
+                alt=""
+              />
 
               <div class="img-buttons">
                 <button class="btn">View Project</button>
@@ -223,7 +233,11 @@
 
           <div class="project">
             <div class="img-container">
-              <img class="project-6" src="" alt="" />
+              <img
+                class="project-img"
+                src="./public/img/thumbnail-project-5-large.webp"
+                alt=""
+              />
 
               <div class="img-buttons">
                 <button class="btn">View Project</button>
@@ -232,6 +246,32 @@
             </div>
             <h3 class="heading-m">Design portfolio</h3>
             <div class="body">
+              <div>html</div>
+              <div>css</div>
+              <div>javascript</div>
+            </div>
+
+            <div class="btn-section">
+              <button class="btn">View Project</button>
+              <button class="btn">View Code</button>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="img-container">
+              <img
+                class="project-img"
+                src="./public/img/thumbnail-project-6-large.webp"
+                alt=""
+              />
+
+              <div class="img-buttons">
+                <button class="btn">View Project</button>
+                <button class="btn">View Code</button>
+              </div>
+            </div>
+            <h3 class="heading-m">Design portfolio</h3>
+            <div class="body-medium">
               <div>html</div>
               <div>css</div>
               <div>javascript</div>
@@ -281,8 +321,6 @@
               <textarea
                 name="message"
                 id="message"
-                cols="30"
-                rows="10"
                 placeholder="Message"
                 class="form-message"
               ></textarea>
