@@ -319,6 +319,8 @@ body {
 .underline {
   border-bottom: 6px solid var(--clr-primary-100);
   z-index: 1;
+
+  line-height: 70px;
 }
 
 /* Header CSS */
@@ -393,70 +395,111 @@ header {
   header {
     width: 1110px;
   }
+
+  .navbar-container {
+    width: 1110px;
+  }
 }
 
 /* Main Section */
 
-@media screen and (min-width: 700px) {
+.heading {
+  display: flex;
+  flex-direction: row-reverse;
+
+  width: 1110px;
+  height: 590px;
+  margin-inline: auto;
+
+  position: relative;
+}
+
+.header-img {
+  width: 445px;
+  height: 720px;
+
+  position: absolute;
+  top: -25%;
+  right: 0;
+
+  z-index: -2;
+}
+
+.header-content {
+  width: 706px;
+
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.header-content p {
+  padding-block: 3.5rem 5rem;
+
+  width: 445px;
+}
+
+@media screen and (max-width: 1110px) {
   .heading {
-    height: 450px;
     width: 708px;
-    margin-inline: auto;
-
-    display: flex;
-    flex-direction: row-reverse;
-
-    align-items: center;
-    position: relative;
+    height: 460px;
   }
 
   .header-img {
     width: 322px;
     height: 600px;
 
-    position: absolute;
-    top: -30.5%;
-    right: -4.3%;
-
-    z-index: -1;
+    top: -30%;
+    right: -4.2%;
   }
 
   .header-content {
-    position: absolute;
-    top: 20px;
-    left: 0;
-  }
+    width: 445px;
 
-  .header-content .heading-xl {
-    width: 430px;
+    top: 0;
   }
 
   .header-content p {
-    padding-block: 40px 34px;
+    padding-block: 3.5rem 4rem;
+  }
 
-    width: 445px;
+  .header-content h1 {
+    width: 422px;
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (max-width: 700px) {
   .heading {
-    width: 1110px;
-    height: 570px;
-  }
-  .header-img {
-    width: 445px;
-    height: 720px;
-    right: 0;
+    width: 343px;
+    height: 520px;
 
-    z-index: -1;
+    flex-direction: column;
+  }
+
+  .header-img {
+    width: 174px;
+    height: 383px;
+
+    top: -30%;
+    right: 24%;
   }
 
   .header-content {
-    padding-block-start: 4rem;
+    width: 343px;
+    text-align: center;
+
+    position: unset;
+
+    padding-top: 16.5rem;
   }
 
-  .header-content .heading-xl {
-    width: 709px;
+  .header-content p {
+    padding-block: 1.5rem 1.5rem;
+    width: 343px;
+  }
+
+  .header-content h1 {
+    width: 343px;
   }
 }
 
@@ -747,6 +790,11 @@ footer {
   border-bottom: 1px solid var(--clr-primary-100);
 
   color: var(--clr-netural-100);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 710px) {
