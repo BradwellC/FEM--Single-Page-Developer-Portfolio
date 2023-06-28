@@ -741,7 +741,6 @@ footer {
 
   outline: none;
 
-  margin-bottom: 32px;
   font-size: 16px;
   line-height: 26px;
 
@@ -759,9 +758,7 @@ footer {
   border-bottom: 1px solid var(--clr-netural-200);
 
   outline: none;
-  margin-bottom: 32px;
 
-  margin-bottom: 32px;
   font-size: 16px;
   line-height: 26px;
 
@@ -795,6 +792,8 @@ footer {
 .form-group {
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 710px) {
@@ -835,4 +834,21 @@ footer {
   .footer-navbar {
     width: 1110px;
   }
+}
+
+/* Error Message */
+
+.error {
+  border-bottom: 1px solid #ff6f5b;
+}
+
+small {
+  color: #ff6f5b;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.17px;
+
+  text-align: right;
+  padding-top: 7px;
 }
